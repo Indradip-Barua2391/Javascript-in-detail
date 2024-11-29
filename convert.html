@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>The JavaScript String() Method</h2>
+
+    <p id="number_results"></p>
+    <p id="string_results"></p>
+
+    <p id="search_results"></p>
+    <p id="replace_results"></p>
+
+    <script>
+      var x = 70;
+      var y = 90;
+
+      document.getElementById("number_results").innerHTML = x + y;
+      document.getElementById("string_results").innerHTML =
+        String(x) + String(y);
+
+      var str = "Hai How are doing for the day";
+      var txt = str.replace("Hai How are", "Hi how are you");
+
+      document.getElementById("replace_results").innerHTML = txt;
+
+      var search_position = str.search("doing");
+
+      document.getElementById("search_results").innerHTML = search_position;
+    </script>
+  </body>
+</html>
